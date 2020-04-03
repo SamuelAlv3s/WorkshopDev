@@ -7,6 +7,6 @@ iniciando no desenvolvimento web
 
 - Conceitos básicos de html,css js, node com express, nunjucks e nodemon, e sql com sqlite3.
 
--(Funcinalidade extras)-
+-(Funcionalidades extras)-
 
 - Falta: deletar ideias,
