@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background:#E5E5E5;
+    color: #25282B;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll{
+    overflow: hidden;
+}
+
+main p{
+    margin-bottom: 18px;
+}
+
+p, .description{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+a,
+button{
+    border: none;
+    font-weight: bold;
+    background: none;
+    color: #FF5E84;
+    cursor: pointer;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+a.fat{
+    background: #FF5E84;
+    color: white;
+    
+    text-decoration: none;
+
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.4);
+
+    transition: 400ms;
+}
+
+a.fat:hover{
+    background-color: #0984e3;
+}
+
+#container{
+    width: 80%;
+    max-width: 980px;
+    margin: 25px auto;
+    display: flex;
+}
+
+#intro{
+    width: 300px;
+    margin-right: 64px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+main{
+    margin: 30px 0;
+    text-align: left;
+}
+
+#footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+#footer span{
+    color: red;
+}
+
+#footer a{
+    color: #FF5E84;
+    opacity: 0.8;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#footer a:hover{
+    font-weight: bold;
+    opacity: 1;
+}
+
+.idea{
+    display: flex;
+    
+    background-color: #FFF;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px -8px rgba(1,1,1,0.1);
+    margin-bottom: 22px;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+
+.content h3{
+    margin: 0;
+}
+
+.content p{
+    margin: 6px 0;
+    color: #777;
+}
+
+.content .description{
+    margin: 16px 0;
+}
+
+.content a{
+    color: #FF5E84;
+    text-decoration: none;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+
+#modal{
+    background-color: #FF5E84;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 600ms;
+}
+
+#modal .addScroll{
+    overflow: auto;
+}
+
+#modal .content{
+
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+form textarea,
+form input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(131, 14, 41,0.5);
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+#modal form a{
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff22;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+}
+
+#modal form a:hover{
+    background-color: #FFF;
+    color: #FF5E84;
+}
+
+form button{
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+form button:hover{
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
+.content form div:nth-child(4){
+    grid-column: span 2;
+}
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+#modal.hide{
+   opacity: 0;
+   visibility: hidden;
+}
+
+/*ideias.html*/
+
+#page-ideas #container{
+    display: block;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container header nav{
+    display: flex;
+    align-items: center;
+}
+
+#container header nav li{
+    margin-right: 16px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#container header nav li a{
+    color: #25282B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#container header nav li a.btn{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#container header nav li:last-child{
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    background-color: #FF5E84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+#container header nav li:last-child:hover{
+    background-color: #0984e3;
+}
+
+section#title{
+    text-align: center;
+    margin: 32px 0;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideas .idea{
+    margin: 0;
+}
+
+
